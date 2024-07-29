@@ -39,12 +39,14 @@ This project implements an advanced system for detecting and predicting agricult
 ## Installation
 
 1. Clone this repository:
+```bash
 git clone https://github.com/Ali-Rizvi-1/advanced_pest_detection.git
 cd advanced_pest_detection
-Copy
+```
 2. Install required packages:
+```bash
 pip install -r requirements.txt
-Copy
+```
 3. Configure AWS credentials for S3 access (if using cloud storage)
 
 ## Usage
@@ -78,6 +80,7 @@ Adjust parameters in `config/config.yaml` to customize the system behavior. Key 
 Run tests using pytest:
 pytest tests/
 Copy
+
 ## Contributing
 
 Contributions to this project are welcome. Please follow these steps:
@@ -94,7 +97,9 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3, 29 June
 
 ## Contact
 
-Ali Rizvi - alirizvi277.ar@gmail.com
+- Syed Muhammad Ali Rizvi - alirizvi277.ar@gmail.com
+- Syed Muhammad Hussain
+- Samiya Ali Zaidi
+- Huzaifah Tariq Ahmed
 
 Project Link: [https://github.com/Ali-Rizvi-1/advanced_pest_detection](https://github.com/Ali-Rizvi-1/advanced_pest_detection)
-This improved README provides a more comprehensive overview of the project, including its structure, installation process, usage instructions, and module descriptions. It also includes sections on contributing and contact information, which are helpful for open-source projects. Remember to replace placeholder text (like the license and contact information) with your specific details.
