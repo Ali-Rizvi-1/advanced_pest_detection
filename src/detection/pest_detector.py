@@ -1,8 +1,12 @@
+import os
 from typing import List, Union
 
+import cv2
 import numpy as np
 from src.detection.rgb_detector import RGBDetector
 from src.detection.thermal_detector import ThermalDetector
+
+from datetime import datetime
 
 class PestDetector:
     def __init__(self, rgb_model_path: str, thermal_model_path: str):
@@ -51,17 +55,17 @@ class PestDetector:
         # combined_coordinates = rgb_coordinates + thermal_coordinates
         print(f"Combined coordinates: {combined_coordinates}")
         return combined_coordinates
-
-    def display(self, image: Union[str, np.ndarray], final_coordinates: List[List[float]]):
+    
+    def save_detected_image(self, image: Union[str, np.ndarray], final_coordinates: List[List[float]], save_dir: str):
         """
-        Display the final coordinates on the image.
+        Save the image with final coordinates drawn on it.
 
         :param image: The input image, either as a file path or a NumPy array.
         :param final_coordinates: The coordinates to display on the image.
+        :param save_dir: Directory to save the output image.
         """
-        print("Displaying final coordinates on the image.")
+        print("Saving image with final coordinates.")
         try:
-            import cv2
             if isinstance(image, str):
                 image = cv2.imread(image)
                 if image is None:
@@ -85,9 +89,10 @@ class PestDetector:
                 label = f"({x_center:.2f}, {y_center:.2f})"
                 cv2.putText(image, label, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
-            cv2.imshow("Detected Image", image)
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
-            print("Image displayed with final coordinates.")
+            # Save the image
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            save_path = os.path.join(save_dir, f"detected_image_{timestamp}.jpg")
+            cv2.imwrite(save_path, image)
+            print(f"Image saved with final coordinates at: {save_path}")
         except Exception as e:
-            print(f"Error displaying image: {e}")
+            print(f"Error processing image: {e}")

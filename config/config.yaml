@@ -11,3 +11,5 @@ thermal_model:
 dataset_name: AgriPestDetection
 # resume_path: ./ckpts/VITONHD_PBE_pose.ckpt
 default_prompt: ""
+image_capture:
+  interval: 60  # Capture every 60 seconds

@@ -49,16 +49,3 @@ class GPSLocator:
             return location_info
         else:
             return None
-
-    def save_inference_data(self, inference_results, output_path):
-        location_info = self.get_location_info()
-        if location_info is None:
-            location_info = {}
-
-        data_to_save = {
-            'location_info': location_info,
-            'inference_results': inference_results
-        }
-
-        with open(output_path, 'w') as f:
-            json.dump(data_to_save, f, indent=2)
