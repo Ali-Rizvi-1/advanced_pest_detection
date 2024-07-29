@@ -1,0 +1,13 @@
+environment: morning
+rgb_model:
+  path: ./models/yolov8n.pt #./models/rgb_model.pt
+  params:
+    learning_rate: 0.00085
+thermal_model:
+  path: ./models/yolov8n.pt #./models/thermal_model.pt
+  params:
+    learning_rate: 0.00085
+
+dataset_name: AgriPestDetection
+# resume_path: ./ckpts/VITONHD_PBE_pose.ckpt
+default_prompt: ""
