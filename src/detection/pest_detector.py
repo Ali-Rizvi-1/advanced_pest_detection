@@ -1,32 +1,3 @@
-# from src.detection.rgb_detector import RGBDetector
-# from src.detection.thermal_detector import ThermalDetector
-
-# class PestDetector:
-#     def __init__(self, rgb_model_path, thermal_model_path):
-        
-#         self.rgb_detector = RGBDetector(rgb_model_path)
-#         self.thermal_detector = ThermalDetector(thermal_model_path)
-        
-
-#     def rgb_detect(self, image):
-#         # Implement YOLOv8 inference for RGB images
-#         return self.rgb_detector.detect(image)
-    
-#     def thermal_detect(self, image):
-#         # Implement YOLOv8 inference for Thermal images
-#         return self.thermal_detector.detect(image)
-    
-#     def combine_coordinates(self, rgb_coordinates, thermal_coordinates):
-        
-#         pass
-    
-#     def display(self, image, final_coordinates):
-#         # display the final coordinates on the image
-        
-#         pass
-
-
-import logging
 from typing import List, Union
 
 import numpy as np
