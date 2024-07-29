@@ -3,5 +3,5 @@ class FusionModule:
         pass
 
     def fuse_detections(self, rgb_detections, thermal_detections, environmental_params):
-        # Implement fusion logic
+        # TODO: To be implemented.
         pass
