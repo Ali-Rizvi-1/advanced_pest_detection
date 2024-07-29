@@ -98,8 +98,8 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3, 29 June
 ## Contact
 
 - Syed Muhammad Ali Rizvi - alirizvi277.ar@gmail.com
-- Syed Muhammad Hussain
-- Samiya Ali Zaidi
-- Huzaifah Tariq Ahmed
+- Syed Muhammad Hussain - hs2764641@gmail.com
+- Samiya Ali Zaidi - samiyaalizaidi@gmail.com
+- Huzaifah Tariq Ahmed - huzihunter2782@yahoo.com
 
 Project Link: [https://github.com/Ali-Rizvi-1/advanced_pest_detection](https://github.com/Ali-Rizvi-1/advanced_pest_detection)
