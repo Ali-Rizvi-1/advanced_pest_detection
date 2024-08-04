@@ -1,24 +1,39 @@
-# Byte-compiled files
+# Byte-compiled / optimized / DLL files
 *.pyc
 *.pyo
 *.pyd
 __pycache__/
 **/__pycache__/
+*$py.class
 
 # Virtual environment
+.venv
 venv/
-venv/*
+ENV/
+env/
 
-# Distribution and packaging
+# Distribution / packaging
 *.egg
 *.egg-info
-dist/
+.Python
 build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+.installed.cfg
 
 # Environment variable files
 .env
 
-# MacOS specific
+# macOS specific
 .DS_Store
 
 # IDEs and editors
@@ -29,6 +44,8 @@ build/
 *.log
 *.tmp
 *.swp
+*.swo
+*.swn
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -39,9 +56,10 @@ coverage.xml
 *.cover
 *.py,cover
 *.hypothesis/
-
-# Pytest cache
-.cache
+htmlcov/
+.tox/
+.coverage
+.coverage.*
 
 # Miscellaneous
 *.diff
@@ -58,8 +76,10 @@ docs/
 records/
 *.json
 
-# OS-specific
-*.bak
-*.tmp
-*.swo
-*.swn
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PyInstaller
+*.manifest
+*.spec

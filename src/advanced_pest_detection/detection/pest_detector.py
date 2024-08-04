@@ -3,8 +3,10 @@ from typing import List, Union
 
 import cv2
 import numpy as np
-from src.detection.rgb_detector import RGBDetector
-from src.detection.thermal_detector import ThermalDetector
+# from advanced_pest_detection.detection.rgb_detector import RGBDetector
+# from advanced_pest_detection.detection.thermal_detector import ThermalDetector
+from .rgb_detector import RGBDetector
+from .thermal_detector import ThermalDetector
 
 from datetime import datetime
 
