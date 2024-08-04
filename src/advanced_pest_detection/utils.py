@@ -2,8 +2,6 @@
 import logging
 from typing import Any, Dict
 
-from src.gps.gps_module import GPSLocator
-
 from datetime import datetime
 
 import json

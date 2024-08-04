@@ -11,7 +11,7 @@ setup(
     description="Advanced Agricultural Pest Detection and Prediction System",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/advanced_pest_detection",
+    url="https://github.com/Ali-Rizvi-1/advanced_pest_detection",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     classifiers=[

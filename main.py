@@ -7,10 +7,11 @@ from typing import Dict, Any
 
 from omegaconf import OmegaConf
 
-from src.image_capture.icm import get_image_capture_module
-from src.detection.pest_detector import PestDetector
-from src.gps.gps_module import GPSLocator
-from utils import prepare_inference_results, save_inference_metadata
+# Package
+from advanced_pest_detection.image_capture.icm import get_image_capture_module
+from advanced_pest_detection.detection.pest_detector import PestDetector
+from advanced_pest_detection.gps.gps_module import GPSLocator
+from advanced_pest_detection.utils import prepare_inference_results, save_inference_metadata
 
 # Constants
 DEFAULT_CONFIG_PATH = "/Users/alirizvi/Desktop/Ali/advanced_pest_detection/config/config.yaml"
